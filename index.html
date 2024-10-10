@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pizza Shop</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <meta name="robots" content="noindex, nofollow">
+
+  <script defer src="./js/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div><img src="./img/burger.png" alt="Burger"></div>
+      <div><img src="./img/shop.png" alt="Logo" id="logo"></div>
+      <div>
+        <img src="./img/search.png" alt="Search">
+        <img src="./img/user.png" alt="User" id="rimmed">
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <hgroup>
+      <h1>Welcome to Pizza Shop</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Mollitia dolore earum numquam enim et esse consectetur
+        consequuntur eaque alias. Aperiam eum atque, praesentium quaerat ea dolores.
+      </p>
+    </hgroup>
+
+    <section>
+      <hgroup>
+        <h2>Our Menu</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eos fugit autem dolore error iste alias
+          ducimus doloremque, architecto ratione id accusamus quibusdam adipisci expedita itaque maxime.
+        </p>
+      </hgroup>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Pizza</th>
+            <th>Ingredients</th>
+
+            <th>Large</th>
+            <th>Medium</th>
+            <th>Small</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Pepperoni</td>
+            <td><i>Pepperoni, Sauce, Cheese</i></td>
+
+            <td>$12.00</td>
+            <td>$10.50</td>
+            <td>$10.00</td>
+          </tr>
+
+          <tr>
+            <td>Vegetarian</td>
+            <td><i>Sauce</i></td>
+
+            <td>$10.00</td>
+            <td>$9.50</td>
+            <td>$9.00</td>
+          </tr>
+
+          <tr>
+            <td>Cheese</td>
+            <td><i>Cheese, Sauce</i></td>
+
+            <td>$9.00</td>
+            <td>$8.50</td>
+            <td>$8.00</td>
+          </tr>
+
+          <tr>
+            <td>Hawaiian</td>
+            <td><i>Cheese, Sauce, Bacon, Pineapple</i></td>
+
+            <td>$14.00</td>
+            <td>$13.50</td>
+            <td>$13.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, eius consequuntur illo nesciunt et quisquam
+        dignissimos dolores, libero eveniet asperiores saepe totam facilis corporis laborum voluptate deserunt. Nobis
+        dolores voluptates dignissimos. Sint corporis dolor cum laboriosam deleniti tempore expedita dolore.
+      </p>
+    </section>
+  </main>
+
+  <aside>
+    <hgroup>
+      <h2>Order Online</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Mollitia dolore earum numquam enim et esse consectetur
+        consequuntur eaque alias. Aperiam eum atque, praesentium quaerat ea dolores.
+      </p>
+    </hgroup>
+
+    <form id="order-info" action="#">
+      <fieldset name="order-information" form="order-info">
+        <legend>
+          Order Information
+        </legend>
+
+        <div>
+          <label for="realname">Name:</label>
+          <input type="text" id="realname" name="realname" required>
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="address">Address:</label>
+          <div>
+            <textarea id="address" name="address" rows="4" cols="50"></textarea>
+          </div>
+        </div>
+
+        <div>
+          <label for="pizza_type">Choose your pizza:</label>
+          <select id="pizza_type" name="pizza_type">
+            <option value="pepperoni">Pepperoni</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="cheese">Cheese</option>
+            <option value="hawaiian">Hawaiian</option>
+          </select>
+        </div>
+
+        <menu>
+          <li>Size:</li>
+
+          <li>
+            <input type="radio" id="small" name="size" value="Small">
+            <label for="small">Small</label>
+          </li>
+
+          <li>
+            <input type="radio" id="medium" name="size" value="Medium">
+            <label for="medium">Medium</label>
+          </li>
+
+          <li>
+            <input type="radio" id="large" name="size" value="Large">
+            <label for="large">Large</label>
+          </li>
+        </menu>
+
+        <menu>
+          <li>Add-ons:</li>
+
+          <li>
+            <input type="checkbox" id="extra-cheese" name="addons" value="extra-cheese">
+            <label for="extra-cheese">Extra Cheese</label>
+          </li>
+
+          <li>
+            <input type="checkbox" id="stuffed-crust" name="addons" value="stuffed-crust">
+            <label for="stuffed-crust">Stuffed Crust</label>
+          </li>
+
+          <li>
+            <input type="checkbox" id="gluten-free" name="addons" value="gluten-free">
+            <label for="gluten-free">Gluten Free</label>
+          </li>
+        </menu>
+
+      </fieldset>
+
+      <fieldset name="results" form="order-info">
+        <legend>
+          Results
+        </legend>
+
+        <ul>
+          <li>Name: <output for="realname" name="r_name"></output></li>
+          <li>Email: <output for="email" name="r_email"></output></li>
+          <li>Address: <output for="address" name="r_address"></output></li>
+          <li>Pizza: <output for="pizza_type" name="r_pizza"></output></li>
+          <li>Size: <output for="size" name="r_size"></output></li>
+          <li>Add-ons: <output for="addons" name="r_addons"></output></li>
+        </ul>
+
+        <input type="submit" value="Order Now">
+      </fieldset>
+    </form>
+  </aside>
+
+  <footer>
+    <p>Copywright &copy; 20xx Pizza Shop</p>
+  </footer>
+
+</body>
+
+</html>
